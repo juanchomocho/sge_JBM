@@ -3,6 +3,7 @@
 ## En esta carpeta se contienen archivos como:
 
 ---
+- [Proyectos](./proyectos/index.md)
 - [Tema2](./ut02/index.md)
 - [Tema3](./ut03/index.md)
 - [Tema4](./ut04/index.md)
