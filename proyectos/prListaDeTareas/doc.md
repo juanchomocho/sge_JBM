@@ -67,7 +67,7 @@ def anadir_tarea():
         prioridad = input(RESET + "Introduce la prioridad de la tarea: " + RED)
         
         # Validamos la fecha
-        fecha_str = input(RESET + "Introduce la fecha límite (formato DD-MM-YYYY): " + RED)
+        fecha_str = input(RESET + "Introduce la fecha límite (formato DD/MM/YYYY): " + RED)
         fecha_partida = fecha_str.split("/")
         dia = int(fecha_partida[0])
         mes = int(fecha_partida[1])
