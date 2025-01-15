@@ -1,0 +1,28 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="gestor_biblioteca.list">
+      <field name="name">gestor_biblioteca list</field>
+      <field name="model">gestor_biblioteca.libro_modelo</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre"/>
+          <field name="autor"/>
+          <field name="fecha_publicacion"/>
+          <field name="IBSN"/>
+          <field name="sinopsis"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="gestor_biblioteca.action_window_libro">
+      <field name="name">libros</field>
+      <field name="res_model">gestor_biblioteca.libro_modelo</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  </data>
+</odoo>

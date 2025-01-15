@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+
+    <!-- Top menu item -->
+
+    <menuitem name="gestor_biblioteca" id="gestor_biblioteca.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Menu 1" id="gestor_biblioteca.menu_1" parent="gestor_biblioteca.menu_root"/>
+
+    <!-- actions -->
+
+    <menuitem name="autor" id="gestor_biblioteca.menu_1_list" parent="gestor_biblioteca.menu_1"
+              action="gestor_biblioteca.action_window_autor"/>
+    <menuitem name="libros" id="gestor_biblioteca.menu_2_list" parent="gestor_biblioteca.menu_1"
+              action="gestor_biblioteca.action_window_libro"/>
+
+  </data>
+</odoo>
