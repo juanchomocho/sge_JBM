@@ -1,0 +1,35 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="gestion_productos.list">
+      <field name="name">gestion_productos list</field>
+      <field name="model">gestion_productos.modelo_producto</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre"/>
+          <field name="descripcion"/>
+          <field name="cod_producto"/>
+          <field name="imagen"/>
+          <field name="categoria"/>
+          <field name="tipo_de_producto"/>
+          <field name="precio"/>
+          <field name="stock_disponible"/>
+          <field name="fecha_de_creacion"/>
+          <field name="fecha_actualizacion"/>
+          <field name="categoria"/>
+          <field name="tipo_de_producto"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="gestion_productos.action_window">
+      <field name="name">gestion_productos window</field>
+      <field name="res_model">gestion_productos.modelo_producto</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+  </data>
+</odoo>

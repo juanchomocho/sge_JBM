@@ -1,0 +1,16 @@
+<odoo>
+  <data>
+    <!-- Top menu item -->
+
+    <menuitem name="gestion_productos" id="gestion_productos.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Menu 1" id="gestion_productos.menu_1" parent="gestion_productos.menu_root"/>
+
+    <!-- actions -->
+
+    <menuitem name="List" id="gestion_productos.menu_1_list" parent="gestion_productos.menu_1"
+              action="gestion_productos.action_window"/>
+  </data>
+</odoo>
