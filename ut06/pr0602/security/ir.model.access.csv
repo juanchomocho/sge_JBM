@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_library_jbm_autor,library_jbm.modelo_autor,model_library_jbm_modelo_autor,base.group_user,1,1,1,1
+access_library_jbm_libro,library_jbm.modelo_libro,model_library_jbm_modelo_libro,base.group_user,1,1,1,1
+access_library_jbm_socio,library_jbm.modelo_socio,model_library_jbm_modelo_socio,base.group_user,1,1,1,1

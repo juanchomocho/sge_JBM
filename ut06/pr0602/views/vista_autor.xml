@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="library_jbm.autor_list">
+      <field name="name">Autores</field>
+      <field name="model">library_jbm.modelo_autor</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="pais_origen"/>
+          <field name="libros"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="library_jbm.autores_action_window">
+      <field name="name">autores</field>
+      <field name="res_model">library_jbm.modelo_autor</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+  </data>
+</odoo>

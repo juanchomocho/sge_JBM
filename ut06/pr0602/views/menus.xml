@@ -1,0 +1,29 @@
+<odoo>
+  <data>
+
+    <!-- Top menu item -->
+
+    <menuitem name="jbm_library" id="library_jbm.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Menu 1"
+        id="library_jbm.menu_1" 
+        parent="library_jbm.menu_root"/>
+
+    <!-- actions -->
+
+    <menuitem name="autores" 
+        id="library_jbm.menu_1_list"
+        parent="library_jbm.menu_1"
+        action="library_jbm.autores_action_window"/>
+    <menuitem name="socios" 
+        id="library_jbm.menu_2_list"
+        parent="library_jbm.menu_1"
+        action="library_jbm.socios_action_window"/>
+    <menuitem name="libros" 
+        id="library_jbm.menu_3_list"
+        parent="library_jbm.menu_1"
+        action="library_jbm.libros_action_window"/>
+  </data>
+</odoo>

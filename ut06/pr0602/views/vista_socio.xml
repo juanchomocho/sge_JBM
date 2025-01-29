@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="library_jbm.socio_list">
+      <field name="name">Socios</field>
+      <field name="model">library_jbm.modelo_socio</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre"/>
+          <field name="telefono"/>
+          <field name="libros"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="library_jbm.socios_action_window">
+      <field name="name">socios</field>
+      <field name="res_model">library_jbm.modelo_socio</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+  </data>
+</odoo>
