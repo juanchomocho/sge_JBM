@@ -14,7 +14,7 @@ Tenemos que añadir 1 modelo para que esto funcione, uno de **stock_product**.
 
 ### Modelo autor
 
-Primero crearemos el modelos de los autores dentro de la carpeta models, lo llamaremos **modelo_autor.py** y le añadiremos los campos necesarios:
+Primero crearemos el modelo de los susbcriptores dentro de la carpeta models, lo llamaremos **stock_product.py** y le añadiremos los campos necesarios:
 
 * *name* de tipo Char
 * *category de origen* de tipo Selection
