@@ -246,4 +246,4 @@ Para que todo lo que hemos hecho cargue debemos descomentar el archivo de securi
 # 6. Comprobamos que ha funcionado:
 Comprobamos que hemos podido añadir los nuevos campos con las referencias necesarias que cumplen sus respectivas referencias en estas imágenes:
 ![paso1](./funciona_basics.jpg) 
-![paso1](./funciona_usage.jpg) 
+![paso2](./funciona_usage.jpg) 
