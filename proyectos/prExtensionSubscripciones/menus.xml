@@ -1,0 +1,23 @@
+<odoo>
+  <data>
+    <!-- Top menu item -->
+
+    <menuitem name="subscription" id="subscription.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Menu vistas" id="subscription.menu_1" parent="subscription.menu_root"/>
+    <menuitem name="Menu estadisticas" id="subscription.menu_2" parent="subscription.menu_root"/>
+
+    <!-- actions -->
+
+    <menuitem name="Basics" id="subscription.menu_1_list" parent="subscription.menu_1"
+              action="action_subscription_basic"/>
+    <menuitem name="Usage" id="subscription.menu_2_list" parent="subscription.menu_1"
+              action="action_subscription_usage"/>
+    <menuitem name="Form" id="subscription.menu_3_list" parent="subscription.menu_1"
+              action="action_subscription_form"/>
+    <menuitem name="Estadisticas" id="subscription.menu_4_list" parent="subscription.menu_2"
+              action="action_estadisticas_form"/>
+  </data>
+</odoo>

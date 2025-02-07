@@ -1,0 +1,52 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="view_estadisticas_form_basic">
+      <field name="name">subscription form</field>
+      <field name="model">subscription.estadisticas</field>
+      <field name="arch" type="xml">
+        <form string="Presas">
+            <sheet>
+                <group>
+                    <field name="fecha_registro" string='Fecha de registro'/>
+                </group>
+                <notebook>
+                    <page name="tasas" string="tasas">
+                        <group>
+                            <field name="tasa_renovacion" string='tasa de renovación'/>
+                            <field name="tasa_cancelacion" string='tasa de cancelación'/>
+                            <field name="ingresos_promedios_por_usuarios" string='Ingresos promedios por usuario'/>
+                            <field name="tasa_conversion" string='tasa de conversión'/>
+                            <field name="tasa_perdida_clientes" string='tasa de perdidas de clientes'/>
+                        </group>
+                    </page>
+                    <page name="numeros" string="numeros">
+                        <field name="numero_subscripcion" string='Numero de subscripciónes'/>
+                        <field name="ingresos_generados" string='Ingresos generados'/>
+                        <field name="nuevas_suscripciones" string='Numero de nuevas subscripciones'/>
+                        <field name="suscripciones_canceladas" string='Numero de subscripciones canceladas'/>
+                        <field name="clientes_nuevos" string='Numero de clientes nuevos'/>
+                        <field name="clientes_recurrentes" string='Numero de clientes recurrentes'/>
+                        <field name="nuevas_suscripciones" string='Numero de nuevas subscripciones'/>
+                        <field name="valor_vida_cliente" string='Valor de la vida del cliente'/>
+                        <field name="costo_adquisicion_cliente" string='Costo de adquisición de clientes'/>
+                        <field name="notas" string='Notas'/>
+                        <field name="relacion_suscripciones" string='subscripciones'/>
+                    </page>
+                </notebook>
+            </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record id="action_estadisticas_form" model="ir.actions.act_window">
+        <field name="name">estadisticas (Form)</field>
+        <field name="res_model">subscription.estadisticas</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_estadisticas_form_basic"/>
+    </record>
+  </data>
+</odoo>
