@@ -1,14 +1,3 @@
-[Proyectos](../index.md)
-
-# Lista de tareas: Sistema de gestión de tareas pendientes
-
---- 
-[Lista de tareas](https://vgonzalez165.github.io/apuntes_sge/proyectos/proyecto_ev1.html)
-Crear una aplicación de consola que permita gestionar una lista de tareas.
-
-[archivo_de_guardado](archivo.csv)
-
-```python
 import datetime
 import csv
 
@@ -158,4 +147,3 @@ while not finalizado:
     else:
         #en caso de que no se haya elegido nada correcto se muestra este mensaje
         print("No has seleccionado ninguna de las opciones")
-```
