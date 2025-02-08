@@ -3,10 +3,12 @@
 # Proyecto de la 2ª Evaluación: Extensión del modelo de suscripciones mediante métricas y estadísticas
 
 ---     
-[PR0605](https://vgonzalez165.github.io/apuntes_sge/ut06_mvc_herencia/pr0605_vista_form.html)
+[Proyecto 2º evaluacion](https://vgonzalez165.github.io/apuntes_sge/proyectos/proyecto_ev2.html)
 
 ## ¿Que vamos a hacer?
 Como tenemos muy poco tiempo para desarrollar este proyecto, vamos a reutilizar las prácticas que hemos hecho con un módulo para la gestión de suscripciones. El objetivo será extender ese módulo con otro modelo de Métricas y estadísticas.
+
+[Modulo subscripciones](Juan_Blas_Martinez_subscription.rar)
 
 # 1. Editamos el modelo del módulo
 Tenemos que añadir 1 modelo para que esto funcione, uno de **subs**.
